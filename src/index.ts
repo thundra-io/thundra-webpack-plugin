@@ -32,6 +32,7 @@ export class ThundraWebpackPlugin {
                         );
                         module._source._value = instrumentedSourceCode;
                     } catch (err) {
+                        console.log(`Error while instrumenting the ${filename}: ${err}`);
                         module._source._value = originalSourceCode;
                     }
                 }
