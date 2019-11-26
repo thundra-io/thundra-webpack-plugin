@@ -20,8 +20,7 @@ export class ThundraWebpackPlugin {
                     return;
                 }
                 const relPath = path.relative(process.cwd(), filename);
-                let relPathWithDots = relPath.replace(/\//g, TRACE_DEF_SEPERATOR);
-                relPathWithDots = relPathWithDots.replace('.js', '');
+                const relPathWithDots = relPath.replace(/\//g, TRACE_DEF_SEPERATOR).replace('.js', '');
 
                 if (this.sourceCodeInstrumenter.shouldTraceFile(relPathWithDots)) {
                     const originalSourceCode = module._source._value;
