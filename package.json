@@ -1,0 +1,34 @@
+{
+  "name": "@thundra/webpack-plugin",
+  "version": "1.0.0",
+  "description": "The webpack plugin to help Thundra's Node.js agent.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "lint": "tslint --project tsconfig.json -t stylish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thundra-io/thundra-webpack-plugin.git"
+  },
+  "author": "Thundra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thundra-io/thundra-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/thundra-io/thundra-webpack-plugin#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.12",
+    "@types/webpack": "^4.41.0",
+    "tslint": "^5.20.1",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "@thundra/instrumenter": "^1.0.0"
+  }
+}
