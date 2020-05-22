@@ -1,6 +1,6 @@
 {
   "name": "@thundra/webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The webpack plugin to help Thundra's Node.js agent.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -29,6 +29,6 @@
     "typescript": "^2.9.2"
   },
   "dependencies": {
-    "@thundra/instrumenter": "^1.0.0"
+    "@thundra/instrumenter": "^1.2.0"
   }
 }
